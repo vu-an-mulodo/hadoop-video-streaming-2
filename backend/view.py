@@ -13,7 +13,6 @@ def index():
 	d = str(uuid4())
 
 	hdfs.get('/video/{}'.format(n), '/usr/share/nginx/html/ver2/video/{}/{}'.format(d, n))
-	print('done')
 	data = {
 		'directory': 'video/{}/{}'.format(d, n)
 	}
